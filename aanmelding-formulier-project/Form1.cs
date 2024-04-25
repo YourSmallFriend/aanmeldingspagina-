@@ -19,6 +19,7 @@ namespace aanmelding_formulier_project
 
         private void aanmeldBTN_Click(object sender, EventArgs e)
         {
+            //test
             string filePath = "aanmeldingformulier.csv";
             string content = string.Format("\n{0},{1},{2}", voornaamTXT.Text, tussenvoegselTXT.Text, achternaamTXT.Text);
             try

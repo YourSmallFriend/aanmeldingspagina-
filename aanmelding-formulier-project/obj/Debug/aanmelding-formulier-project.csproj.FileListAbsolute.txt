@@ -1,0 +1,10 @@
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding-formulier-project.csproj.AssemblyReference.cache
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding_formulier_project.Form1.resources
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding_formulier_project.Properties.Resources.resources
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding-formulier-project.csproj.GenerateResource.cache
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding-formulier-project.csproj.CoreCompileInputs.cache
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\bin\Debug\aanmelding-formulier-project.exe.config
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\bin\Debug\aanmelding-formulier-project.exe
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\bin\Debug\aanmelding-formulier-project.pdb
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding-formulier-project.exe
+C:\Users\samuel\OneDrive - COG\school\C#\aanmelding-formulier-project\aanmelding-formulier-project\obj\Debug\aanmelding-formulier-project.pdb

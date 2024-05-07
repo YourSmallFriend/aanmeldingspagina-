@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 using System.IO;
+
 namespace aanmelding_formulier_project
 {
     public partial class Form1 : Form
@@ -19,13 +15,20 @@ namespace aanmelding_formulier_project
             voornaamTXT.Font = standaardTXTsize;
             tussenvoegselTXT.Font = standaardTXTsize;
             achternaamTXT.Font = standaardTXTsize;
+            SetDutchCulture();
+        }
 
+        private void SetDutchCulture()
+        {
+            CultureInfo culture = new CultureInfo("nl-NL");
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
         }
 
         private void aanmeldBTN_Click(object sender, EventArgs e)
         {
             string filePath = "aanmeldingformulier.csv";
-            string content = string.Format("\n{0},{1},{2}", voornaamTXT.Text, tussenvoegselTXT.Text, achternaamTXT.Text);
+            string content = string.Format("\n{0},{1},{2},{3:yyyy-MM-dd}", voornaamTXT.Text, tussenvoegselTXT.Text, achternaamTXT.Text, dateTimePicker1.Value);
             try
             {
                 if (File.Exists(filePath))
@@ -36,15 +39,15 @@ namespace aanmelding_formulier_project
                 {
                     File.WriteAllText(filePath, content);
                 }
-
                 MessageBox.Show("CSV content is opgeslagen!");
+                voornaamTXT.Clear();
+                tussenvoegselTXT.Clear();
+                achternaamTXT.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred while saving the CSV content: {ex.Message}");
             }
         }
-
-
     }
 }

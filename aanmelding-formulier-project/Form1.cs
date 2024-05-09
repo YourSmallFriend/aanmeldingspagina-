@@ -15,14 +15,6 @@ namespace aanmelding_formulier_project
             voornaamTXT.Font = standaardTXTsize;
             tussenvoegselTXT.Font = standaardTXTsize;
             achternaamTXT.Font = standaardTXTsize;
-            SetDutchCulture();
-        }
-
-        private void SetDutchCulture()
-        {
-            CultureInfo culture = new CultureInfo("nl-NL");
-            Thread.CurrentThread.CurrentCulture = culture;
-            Thread.CurrentThread.CurrentUICulture = culture;
         }
 
         private void aanmeldBTN_Click(object sender, EventArgs e)
@@ -39,10 +31,10 @@ namespace aanmelding_formulier_project
                 {
                     File.WriteAllText(filePath, content);
                 }
-                MessageBox.Show("CSV content is opgeslagen!");
                 voornaamTXT.Clear();
                 tussenvoegselTXT.Clear();
                 achternaamTXT.Clear();
+                MessageBox.Show("CSV content is opgeslagen!");
             }
             catch (Exception ex)
             {

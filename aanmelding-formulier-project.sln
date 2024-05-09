@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aanmelding-formulier-project", "aanmelding-formulier-project\aanmelding-formulier-project.csproj", "{22B40D79-7D2D-44A0-8D1E-25CC9E0CD41D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admimlogin", "admimlogin\admimlogin.csproj", "{1D5A6313-66EC-4819-86E6-4DCA2C948C3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{22B40D79-7D2D-44A0-8D1E-25CC9E0CD41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22B40D79-7D2D-44A0-8D1E-25CC9E0CD41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22B40D79-7D2D-44A0-8D1E-25CC9E0CD41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5A6313-66EC-4819-86E6-4DCA2C948C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5A6313-66EC-4819-86E6-4DCA2C948C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5A6313-66EC-4819-86E6-4DCA2C948C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5A6313-66EC-4819-86E6-4DCA2C948C3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

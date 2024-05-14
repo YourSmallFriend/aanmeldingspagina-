@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace admimlogin
 {
-    public partial class Form1 : Form
+    public partial class inlogscherm : Form
     {
-        private const string correctGebruikersnaam = "Samuel";
-        private const string correctWachtwoord = "1234";
+        private const string correctGebruikersnaam = "admin";
+        private const string correctWachtwoord = "admin";
         private int kansen = 0;
         private DateTime lockoutEindTijd;
 
-        public Form1()
+        public inlogscherm()
         {
             InitializeComponent();
         }
@@ -46,7 +46,9 @@ namespace admimlogin
 
             if (gebruikersnaamTXT.Text == correctGebruikersnaam && wachtwoordTXT.Text == correctWachtwoord)
             {
-                Application.Exit();
+                this.Hide();
+                Form2 adminscherm = new Form2();
+                adminscherm.ShowDialog();
             }
             else
             {

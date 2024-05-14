@@ -1,6 +1,6 @@
 ﻿namespace admimlogin
 {
-    partial class Form1
+    partial class inlogscherm
     {
         /// <summary>
         /// Required designer variable.
@@ -98,7 +98,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // inlogscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,8 +109,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.wachtwoordTXT);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "inlogscherm";
+            this.Text = "inlogscherm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

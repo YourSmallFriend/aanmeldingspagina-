@@ -34,7 +34,6 @@ namespace aanmelding_formulier_project
                 voornaamTXT.Clear();
                 tussenvoegselTXT.Clear();
                 achternaamTXT.Clear();
-                MessageBox.Show("CSV content is opgeslagen!");
             }
             catch (Exception ex)
             {

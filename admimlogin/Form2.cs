@@ -16,7 +16,7 @@ namespace admimlogin
         public Form2()
         {
             InitializeComponent();
-            LoadCSVFile("Aameldingsformulier.csv");
+            LoadCSVFile("aanmeldingformulier.csv");
         }
         private void LoadCSVFile(string filename)
         {
@@ -28,16 +28,39 @@ namespace admimlogin
                 if (File.Exists(filePath))
                 {
                     // Clear existing content
-                    richTextBox1.Clear();
+                    dataGridView1.Rows.Clear();
+                    dataGridView1.Columns.Clear();
 
                     // Read the CSV file
                     string[] lines = File.ReadAllLines(filePath);
 
-                    // Display the contents in RichTextBox
+                    // Add columns
+                    dataGridView1.Columns.Add("Name", "Name");
+                    dataGridView1.Columns.Add("MiddleName", "Middle Name");
+                    dataGridView1.Columns.Add("LastName", "Last Name");
+                    dataGridView1.Columns.Add("Date", "Date");
+
+                    // Display the contents in DataGridView
                     foreach (string line in lines)
                     {
-                        richTextBox1.AppendText(line + Environment.NewLine);
+                        // Split the line into parts
+                        string[] parts = line.Split(',');
+
+                        // Check if line has enough parts
+                        if (parts.Length >= 4)
+                        {
+                            string firstName = parts[0];
+                            string middleName = parts[1];
+                            string lastName = parts[2];
+                            string date = parts[3];
+
+                            // Add row to DataGridView
+                            dataGridView1.Rows.Add(firstName, middleName, lastName, date);
+                        }
                     }
+
+                    // Update label with the count of people
+                    label1.Text = $"aantal aanmeldingen: {dataGridView1.Rows.Count - 1}";
                 }
                 else
                 {

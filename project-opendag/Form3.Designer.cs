@@ -44,7 +44,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(533, 275);
+            this.dateTimePicker1.Location = new System.Drawing.Point(533, 118);
             this.dateTimePicker1.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2024, 4, 25, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";

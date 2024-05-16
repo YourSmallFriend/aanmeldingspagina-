@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Globalization;
-using System.Threading;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace aanmelding_formulier_project
+namespace admimlogin
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
             var standaardTXTsize = new System.Drawing.Font("Arial", 20);
@@ -39,11 +44,6 @@ namespace aanmelding_formulier_project
             {
                 MessageBox.Show($"An error occurred while saving the CSV content: {ex.Message}");
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

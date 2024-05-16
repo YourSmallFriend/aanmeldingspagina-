@@ -19,3 +19,4 @@ C:\Users\samuel\OneDrive - COG\Documenten\GitHub\aanmeldingspagina-\admimlogin\o
 C:\Users\samuel\OneDrive - COG\Documenten\GitHub\aanmeldingspagina-\admimlogin\obj\Debug\admimlogin.pdb
 C:\Users\samuel\OneDrive - COG\Documenten\GitHub\aanmeldingspagina-\admimlogin\obj\Debug\admimlogin.inlogscherm.resources
 C:\Users\samuel\OneDrive - COG\Documenten\GitHub\aanmeldingspagina-\admimlogin\obj\Debug\admimlogin.Form2.resources
+C:\Users\samuel\OneDrive - COG\Documenten\GitHub\aanmeldingspagina-\admimlogin\obj\Debug\admimlogin.Form3.resources

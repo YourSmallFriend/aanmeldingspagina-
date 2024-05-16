@@ -23,6 +23,7 @@ namespace admimlogin
             try
             {
                 string filePath = Path.Combine(Application.StartupPath, filename);
+
                 if (File.Exists(filePath))
                 {
                     dataGridView1.Rows.Clear();
@@ -32,24 +33,27 @@ namespace admimlogin
 
                     dataGridView1.Columns.Add("Naam", "Naam");
                     dataGridView1.Columns.Add("Tussenvoegsel", "Tussenvoegsel");
-                    dataGridView1.Columns.Add("Achternaam", "achternaam");
+                    dataGridView1.Columns.Add("Achternaam", "Achternaam");
+                    dataGridView1.Columns.Add("telefoonnummer", "telefoonnummer");
+                    dataGridView1.Columns.Add("e-mail", "e-mail");
                     dataGridView1.Columns.Add("Datum", "Datum");
 
                     foreach (string line in lines)
                     {
                         string[] parts = line.Split(',');
 
-                        if (parts.Length >= 4)
+                        if (parts.Length >= 6)
                         {
                             string voornaam = parts[0];
                             string tussenvoegsel = parts[1];
                             string achternaam = parts[2];
-                            string datum = parts[3];
+                            string telefoonnummer = parts[3];
+                            string mail = parts[4];
+                            string datum = parts[5];
 
-                            dataGridView1.Rows.Add(voornaam, tussenvoegsel, achternaam, datum);
+                            dataGridView1.Rows.Add(voornaam, tussenvoegsel, achternaam, telefoonnummer, mail, datum);
                         }
                     }
-
                     label1.Text = $"aantal aanmeldingen: {dataGridView1.Rows.Count - 1}";
                 }
                 else

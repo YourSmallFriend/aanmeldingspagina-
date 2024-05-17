@@ -16,7 +16,7 @@ namespace admimlogin
         public Form3()
         {
             InitializeComponent();
-            var standaardTXTsize = new System.Drawing.Font("Arial", 20);
+            var standaardTXTsize = new System.Drawing.Font("Arial", 15);
             voornaamTXT.Font = standaardTXTsize;
             tussenvoegselTXT.Font = standaardTXTsize;
             achternaamTXT.Font = standaardTXTsize;

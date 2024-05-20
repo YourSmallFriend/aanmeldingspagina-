@@ -68,7 +68,7 @@ namespace project_opendag
             }
             else
             {
-                wachtwoordTXT.UseSystemPasswordChar = false;
+                wachtwoordTXT.UseSystemPasswordChar= false;
             }
         }
     }

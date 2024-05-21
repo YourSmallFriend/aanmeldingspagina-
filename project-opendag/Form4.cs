@@ -59,7 +59,7 @@ namespace project_opendag
                 }
             }
         }
-
+        //werkt niet meer!!
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)

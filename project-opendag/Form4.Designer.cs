@@ -133,6 +133,7 @@
             this.wachtwoordTXT.Name = "wachtwoordTXT";
             this.wachtwoordTXT.Size = new System.Drawing.Size(375, 39);
             this.wachtwoordTXT.TabIndex = 16;
+            this.wachtwoordTXT.UseSystemPasswordChar = true;
             // 
             // tableLayoutPanel2
             // 

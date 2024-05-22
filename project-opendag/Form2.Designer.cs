@@ -59,7 +59,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1010, 250);
+            this.dataGridView1.Size = new System.Drawing.Size(1039, 250);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -82,13 +82,13 @@
             this.tableLayoutPanel1.Controls.Add(this.chart1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(139, 292);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(137, 128);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.363296F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.6367F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 231F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1045, 514);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1046, 514);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // chart1
@@ -103,7 +103,7 @@
             series1.Legend = "Legend1";
             series1.Name = "datum";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1010, 226);
+            this.chart1.Size = new System.Drawing.Size(1039, 226);
             this.chart1.TabIndex = 19;
             this.chart1.Text = "chart1";
             // 
@@ -136,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::project_opendag.Properties.Resources.huawei_nova_8_pro_bubble_circle_white_background_purple_2560x1080_3962;
+            this.BackgroundImage = global::project_opendag.Properties.Resources.achtergrond;
             this.ClientSize = new System.Drawing.Size(1300, 818);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);

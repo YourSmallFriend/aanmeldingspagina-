@@ -11,7 +11,6 @@ using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms.DataVisualization.Charting;
 
-
 namespace admimlogin
 {
     public partial class Form2 : Form
@@ -58,7 +57,7 @@ namespace admimlogin
                             string mail = parts[5];
                             string datum = parts[6];
 
-                            dataGridView1.Rows.Add(opleiding,voornaam, tussenvoegsel, achternaam, telefoonnummer, mail, datum);
+                            dataGridView1.Rows.Add(opleiding, voornaam, tussenvoegsel, achternaam, telefoonnummer, mail, datum);
                         }
                     }
                     label1.Text = $"Aantal aanmeldingen: {dataGridView1.Rows.Count - 1}";
@@ -77,30 +76,57 @@ namespace admimlogin
         public void DisplayChartFromGrid()
         {
             chart1.Series.Clear();
-            var series = chart1.Series.Add("Kandidaten");
-            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+            var seriesDev = new Series("Dev")
+            {
+                ChartType = SeriesChartType.Column,
+                Color = Color.Red
+            };
+            var seriesICTNiveau3 = new Series("ICT niveau 3")
+            {
+                ChartType = SeriesChartType.Column,
+                Color = Color.Blue
+            };
+            var seriesICTNiveau4 = new Series("ICT niveau 4")
+            {
+                ChartType = SeriesChartType.Column,
+                Color = Color.Green
+            };
 
-            Dictionary<string, int> datumCountsFromGrid = new Dictionary<string, int>();
+            chart1.Series.Add(seriesDev);
+            chart1.Series.Add(seriesICTNiveau3);
+            chart1.Series.Add(seriesICTNiveau4);
+
+            Dictionary<string, Dictionary<string, int>> datumOpleidingCounts = new Dictionary<string, Dictionary<string, int>>();
 
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (!row.IsNewRow)
                 {
                     string datum = row.Cells["Datum"].Value.ToString();
-                    if (datumCountsFromGrid.ContainsKey(datum))
+                    string opleiding = row.Cells["Opleiding"].Value.ToString();
+
+                    if (!datumOpleidingCounts.ContainsKey(datum))
                     {
-                        datumCountsFromGrid[datum]++;
+                        datumOpleidingCounts[datum] = new Dictionary<string, int>
+                        {
+                            { "Dev", 0 },
+                            { "ICT niveau 3", 0 },
+                            { "ICT niveau 4", 0 }
+                        };
                     }
-                    else
+
+                    if (datumOpleidingCounts[datum].ContainsKey(opleiding))
                     {
-                        datumCountsFromGrid[datum] = 1;
+                        datumOpleidingCounts[datum][opleiding]++;
                     }
                 }
             }
-
-            foreach (var kvp in datumCountsFromGrid)
+            foreach (var datum in datumOpleidingCounts.Keys)
             {
-                series.Points.AddXY(kvp.Key, kvp.Value);
+                var counts = datumOpleidingCounts[datum];
+                seriesDev.Points.AddXY(datum, counts["Dev"]);
+                seriesICTNiveau3.Points.AddXY(datum, counts["ICT niveau 3"]);
+                seriesICTNiveau4.Points.AddXY(datum, counts["ICT niveau 4"]);
             }
         }
     }

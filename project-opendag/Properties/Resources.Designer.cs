@@ -83,6 +83,16 @@ namespace project_opendag.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap achtergrond {
+            get {
+                object obj = ResourceManager.GetObject("achtergrond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap huawei_nova_8_pro_bubble_circle_white_background_purple_2560x1080_3962 {
             get {
                 object obj = ResourceManager.GetObject("huawei-nova-8-pro-bubble-circle-white-background-purple-2560x1080-3962", resourceCulture);

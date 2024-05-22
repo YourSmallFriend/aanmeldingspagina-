@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::project_opendag.Properties.Resources.huawei_nova_8_pro_bubble_circle_white_background_purple_2560x1080_3962;
+            this.BackgroundImage = global::project_opendag.Properties.Resources.achtergrond;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);

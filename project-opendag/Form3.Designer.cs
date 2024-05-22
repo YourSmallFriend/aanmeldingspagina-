@@ -46,9 +46,9 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.dev = new System.Windows.Forms.RadioButton();
-            this.ict4 = new System.Windows.Forms.RadioButton();
             this.ict3 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.ict4 = new System.Windows.Forms.RadioButton();
+            this.opleidingLBL = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,12 +60,12 @@
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dateTimePicker1.Location = new System.Drawing.Point(3, 164);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2024, 5, 30, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2024, 10, 17, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2024, 10, 15, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(241, 22);
             this.dateTimePicker1.TabIndex = 15;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 10, 24, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2024, 10, 17, 0, 0, 0, 0);
             // 
             // aanmeldBTN
             // 
@@ -94,7 +94,7 @@
             this.achternaamTXT.Location = new System.Drawing.Point(3, 222);
             this.achternaamTXT.Multiline = true;
             this.achternaamTXT.Name = "achternaamTXT";
-            this.achternaamTXT.Size = new System.Drawing.Size(374, 45);
+            this.achternaamTXT.Size = new System.Drawing.Size(373, 45);
             this.achternaamTXT.TabIndex = 12;
             // 
             // tussenvoegselLBL
@@ -113,7 +113,7 @@
             this.tussenvoegselTXT.Location = new System.Drawing.Point(3, 131);
             this.tussenvoegselTXT.Multiline = true;
             this.tussenvoegselTXT.Name = "tussenvoegselTXT";
-            this.tussenvoegselTXT.Size = new System.Drawing.Size(374, 44);
+            this.tussenvoegselTXT.Size = new System.Drawing.Size(373, 44);
             this.tussenvoegselTXT.TabIndex = 10;
             // 
             // voornaamLBL
@@ -132,7 +132,7 @@
             this.voornaamTXT.Location = new System.Drawing.Point(3, 37);
             this.voornaamTXT.Multiline = true;
             this.voornaamTXT.Name = "voornaamTXT";
-            this.voornaamTXT.Size = new System.Drawing.Size(374, 43);
+            this.voornaamTXT.Size = new System.Drawing.Size(373, 43);
             this.voornaamTXT.TabIndex = 8;
             // 
             // mailTXT
@@ -140,7 +140,7 @@
             this.mailTXT.Location = new System.Drawing.Point(3, 308);
             this.mailTXT.Multiline = true;
             this.mailTXT.Name = "mailTXT";
-            this.mailTXT.Size = new System.Drawing.Size(374, 45);
+            this.mailTXT.Size = new System.Drawing.Size(373, 45);
             this.mailTXT.TabIndex = 16;
             // 
             // label1
@@ -159,7 +159,7 @@
             this.telefoonnummerTXT.Location = new System.Drawing.Point(3, 399);
             this.telefoonnummerTXT.Multiline = true;
             this.telefoonnummerTXT.Name = "telefoonnummerTXT";
-            this.telefoonnummerTXT.Size = new System.Drawing.Size(374, 43);
+            this.telefoonnummerTXT.Size = new System.Drawing.Size(373, 43);
             this.telefoonnummerTXT.TabIndex = 18;
             // 
             // label2
@@ -179,9 +179,9 @@
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.61441F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.38559F));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.72769F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.27231F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.voornaamLBL, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.voornaamTXT, 0, 1);
@@ -206,7 +206,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 174F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(410, 571);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(437, 571);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
             // tableLayoutPanel2
@@ -245,9 +245,9 @@
             this.tableLayoutPanel4.Controls.Add(this.aanmeldBTN, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.dev, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.ict4, 0, 4);
             this.tableLayoutPanel4.Controls.Add(this.ict3, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.ict4, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.opleidingLBL, 0, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(568, 188);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 7;
@@ -285,19 +285,6 @@
             this.dev.Text = "Software Developer";
             this.dev.UseVisualStyleBackColor = true;
             // 
-            // ict4
-            // 
-            this.ict4.AutoSize = true;
-            this.ict4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ict4.Location = new System.Drawing.Point(20, 296);
-            this.ict4.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.ict4.Name = "ict4";
-            this.ict4.Size = new System.Drawing.Size(136, 26);
-            this.ict4.TabIndex = 17;
-            this.ict4.TabStop = true;
-            this.ict4.Text = "ICT Niveau 4";
-            this.ict4.UseVisualStyleBackColor = true;
-            // 
             // ict3
             // 
             this.ict3.AutoSize = true;
@@ -311,23 +298,36 @@
             this.ict3.Text = "ICT Niveau 3";
             this.ict3.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // ict4
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 221);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 29);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "opleiding";
+            this.ict4.AutoSize = true;
+            this.ict4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ict4.Location = new System.Drawing.Point(20, 296);
+            this.ict4.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.ict4.Name = "ict4";
+            this.ict4.Size = new System.Drawing.Size(136, 26);
+            this.ict4.TabIndex = 17;
+            this.ict4.TabStop = true;
+            this.ict4.Text = "ICT Niveau 4";
+            this.ict4.UseVisualStyleBackColor = true;
+            // 
+            // opleidingLBL
+            // 
+            this.opleidingLBL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.opleidingLBL.AutoSize = true;
+            this.opleidingLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opleidingLBL.Location = new System.Drawing.Point(3, 221);
+            this.opleidingLBL.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+            this.opleidingLBL.Name = "opleidingLBL";
+            this.opleidingLBL.Size = new System.Drawing.Size(114, 29);
+            this.opleidingLBL.TabIndex = 19;
+            this.opleidingLBL.Text = "opleiding";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::project_opendag.Properties.Resources.huawei_nova_8_pro_bubble_circle_white_background_purple_2560x1080_3962;
+            this.BackgroundImage = global::project_opendag.Properties.Resources.achtergrond;
             this.ClientSize = new System.Drawing.Size(1090, 930);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -367,7 +367,8 @@
         private System.Windows.Forms.RadioButton ict4;
         private System.Windows.Forms.RadioButton ict3;
         private System.Windows.Forms.RadioButton dev;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label opleidingLBL;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ErrorProvider errorMail;
     }
 }

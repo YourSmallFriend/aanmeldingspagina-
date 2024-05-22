@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.gebruikersnaamTXT = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.wachtwoordTXT = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,18 +55,6 @@
             this.label1.Size = new System.Drawing.Size(147, 29);
             this.label1.TabIndex = 11;
             this.label1.Text = "Wachtwoord";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(56, 104);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(156, 20);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Laat wachtwoord zien";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button1
             // 
@@ -109,7 +97,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.15591F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.84409F));
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.gebruikersnaamTXT, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
@@ -131,6 +119,7 @@
             this.wachtwoordTXT.Location = new System.Drawing.Point(218, 56);
             this.wachtwoordTXT.Multiline = true;
             this.wachtwoordTXT.Name = "wachtwoordTXT";
+            this.wachtwoordTXT.PasswordChar = '*';
             this.wachtwoordTXT.Size = new System.Drawing.Size(375, 39);
             this.wachtwoordTXT.TabIndex = 16;
             this.wachtwoordTXT.UseSystemPasswordChar = true;
@@ -160,6 +149,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // checkBox2
+            // 
+            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(56, 104);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(156, 20);
+            this.checkBox2.TabIndex = 18;
+            this.checkBox2.Text = "Laat wachtwoord zien";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
             // Form4
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -171,6 +172,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "S";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -183,7 +185,6 @@
         #endregion
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox gebruikersnaamTXT;
         private System.Windows.Forms.Label label2;
@@ -191,5 +192,6 @@
         private System.Windows.Forms.TextBox wachtwoordTXT;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

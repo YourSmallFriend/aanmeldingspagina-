@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
+using System.Windows.Forms.DataVisualization.Charting;
+
 
 namespace admimlogin
 {
@@ -17,8 +20,10 @@ namespace admimlogin
         {
             InitializeComponent();
             LoadCSVFile("aanmeldingformulier.csv");
+            DisplayChartFromGrid();
         }
-        private void LoadCSVFile(string filename)
+
+        public void LoadCSVFile(string filename)
         {
             try
             {
@@ -31,30 +36,32 @@ namespace admimlogin
 
                     string[] lines = File.ReadAllLines(filePath);
 
+                    dataGridView1.Columns.Add("Opleiding", "Opleiding");
                     dataGridView1.Columns.Add("Naam", "Naam");
                     dataGridView1.Columns.Add("Tussenvoegsel", "Tussenvoegsel");
                     dataGridView1.Columns.Add("Achternaam", "Achternaam");
-                    dataGridView1.Columns.Add("telefoonnummer", "telefoonnummer");
-                    dataGridView1.Columns.Add("e-mail", "e-mail");
+                    dataGridView1.Columns.Add("Telefoonnummer", "Telefoonnummer");
+                    dataGridView1.Columns.Add("E-mail", "E-mail");
                     dataGridView1.Columns.Add("Datum", "Datum");
 
                     foreach (string line in lines)
                     {
                         string[] parts = line.Split(',');
 
-                        if (parts.Length >= 6)
+                        if (parts.Length >= 7)
                         {
-                            string voornaam = parts[0];
-                            string tussenvoegsel = parts[1];
-                            string achternaam = parts[2];
-                            string telefoonnummer = parts[3];
-                            string mail = parts[4];
-                            string datum = parts[5];
+                            string opleiding = parts[0];
+                            string voornaam = parts[1];
+                            string tussenvoegsel = parts[2];
+                            string achternaam = parts[3];
+                            string telefoonnummer = parts[4];
+                            string mail = parts[5];
+                            string datum = parts[6];
 
-                            dataGridView1.Rows.Add(voornaam, tussenvoegsel, achternaam, telefoonnummer, mail, datum);
+                            dataGridView1.Rows.Add(opleiding,voornaam, tussenvoegsel, achternaam, telefoonnummer, mail, datum);
                         }
                     }
-                    label1.Text = $"aantal aanmeldingen: {dataGridView1.Rows.Count - 1}";
+                    label1.Text = $"Aantal aanmeldingen: {dataGridView1.Rows.Count - 1}";
                 }
                 else
                 {
@@ -64,6 +71,36 @@ namespace admimlogin
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        public void DisplayChartFromGrid()
+        {
+            chart1.Series.Clear();
+            var series = chart1.Series.Add("Kandidaten");
+            series.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+
+            Dictionary<string, int> datumCountsFromGrid = new Dictionary<string, int>();
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    string datum = row.Cells["Datum"].Value.ToString();
+                    if (datumCountsFromGrid.ContainsKey(datum))
+                    {
+                        datumCountsFromGrid[datum]++;
+                    }
+                    else
+                    {
+                        datumCountsFromGrid[datum] = 1;
+                    }
+                }
+            }
+
+            foreach (var kvp in datumCountsFromGrid)
+            {
+                series.Points.AddXY(kvp.Key, kvp.Value);
             }
         }
     }

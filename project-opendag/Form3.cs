@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace admimlogin
 {
     public partial class Form3 : Form
     {
+        public string opleiding = "";
         public Form3()
         {
             InitializeComponent();
@@ -26,8 +28,21 @@ namespace admimlogin
 
         private void aanmeldBTN_Click(object sender, EventArgs e)
         {
+            if (ict3.Checked)
+            {
+                opleiding = "ICT niveau 3";
+            }
+            else if (ict4.Checked)
+            {
+                opleiding = "ICT niveau 4";
+            }
+            else if (dev.Checked)
+            {
+                opleiding = "Software Developer";
+            }
+
             string filePath = "aanmeldingformulier.csv";
-            string content = string.Format("\n{0},{1},{2},{3},{4},{5:yyyy-MM-dd}", voornaamTXT.Text, tussenvoegselTXT.Text, achternaamTXT.Text,telefoonnummerTXT.Text, mailTXT.Text, dateTimePicker1.Value);
+            string content = string.Format("\n{0},{1},{2},{3},{4},{5},{6:yyyy-MM-dd}", opleiding, voornaamTXT.Text, tussenvoegselTXT.Text, achternaamTXT.Text, telefoonnummerTXT.Text, mailTXT.Text, dateTimePicker1.Value);
             try
             {
                 if (File.Exists(filePath))

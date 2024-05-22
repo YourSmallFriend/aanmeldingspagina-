@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace project_opendag
 {
@@ -59,17 +60,21 @@ namespace project_opendag
                 }
             }
         }
-        //werkt niet meer!!
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (checkBox2.Checked)
             {
                 wachtwoordTXT.UseSystemPasswordChar = true;
             }
             else
             {
-                wachtwoordTXT.UseSystemPasswordChar= false;
+                wachtwoordTXT.UseSystemPasswordChar = false;
             }
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            wachtwoordTXT.UseSystemPasswordChar = false;
         }
     }
 }

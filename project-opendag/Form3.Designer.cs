@@ -44,11 +44,11 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dev = new System.Windows.Forms.RadioButton();
+            this.ict4 = new System.Windows.Forms.RadioButton();
+            this.ict3 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +70,7 @@
             // aanmeldBTN
             // 
             this.aanmeldBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aanmeldBTN.Location = new System.Drawing.Point(3, 344);
+            this.aanmeldBTN.Location = new System.Drawing.Point(3, 428);
             this.aanmeldBTN.Name = "aanmeldBTN";
             this.aanmeldBTN.Size = new System.Drawing.Size(253, 46);
             this.aanmeldBTN.TabIndex = 14;
@@ -244,69 +244,22 @@
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.aanmeldBTN, 0, 6);
             this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.radioButton3, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.radioButton2, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.radioButton1, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.dev, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.ict4, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.ict3, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(568, 188);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 7;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.07547F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.92453F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(259, 489);
             this.tableLayoutPanel4.TabIndex = 23;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(3, 254);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(133, 25);
-            this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(3, 285);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(133, 23);
-            this.radioButton2.TabIndex = 17;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(3, 314);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(133, 24);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 222);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 29);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "opleiding";
             // 
             // label4
             // 
@@ -318,6 +271,57 @@
             this.label4.Size = new System.Drawing.Size(79, 29);
             this.label4.TabIndex = 20;
             this.label4.Text = "datum";
+            // 
+            // dev
+            // 
+            this.dev.AutoSize = true;
+            this.dev.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dev.Location = new System.Drawing.Point(20, 328);
+            this.dev.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.dev.Name = "dev";
+            this.dev.Size = new System.Drawing.Size(189, 26);
+            this.dev.TabIndex = 18;
+            this.dev.TabStop = true;
+            this.dev.Text = "Software Developer";
+            this.dev.UseVisualStyleBackColor = true;
+            // 
+            // ict4
+            // 
+            this.ict4.AutoSize = true;
+            this.ict4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ict4.Location = new System.Drawing.Point(20, 296);
+            this.ict4.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.ict4.Name = "ict4";
+            this.ict4.Size = new System.Drawing.Size(136, 26);
+            this.ict4.TabIndex = 17;
+            this.ict4.TabStop = true;
+            this.ict4.Text = "ICT Niveau 4";
+            this.ict4.UseVisualStyleBackColor = true;
+            // 
+            // ict3
+            // 
+            this.ict3.AutoSize = true;
+            this.ict3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ict3.Location = new System.Drawing.Point(20, 263);
+            this.ict3.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.ict3.Name = "ict3";
+            this.ict3.Size = new System.Drawing.Size(136, 26);
+            this.ict3.TabIndex = 16;
+            this.ict3.TabStop = true;
+            this.ict3.Text = "ICT Niveau 3";
+            this.ict3.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 221);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 29);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "opleiding";
             // 
             // Form3
             // 
@@ -360,9 +364,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton ict4;
+        private System.Windows.Forms.RadioButton ict3;
+        private System.Windows.Forms.RadioButton dev;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }

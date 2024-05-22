@@ -109,15 +109,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\huawei-nova-8-pro-bubble-circle-white-background-purple-2560x1080-3962.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot 2024-05-20 164741.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\11.png" />
   </ItemGroup>
   <ItemGroup>

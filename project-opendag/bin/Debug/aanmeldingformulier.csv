@@ -1,57 +1,52 @@
-opleidingsniveau,voornaam,achternaam,telefoonnummer,email,datum
-ICT niveau 4,jan,de,doe,0612345678,jan.doe@example.com,2024-10-17
-ICT niveau 3,emma,van,stone,0623456789,emma.stone@example.com,2024-10-15
-Dev,lisa,de,smith,0612345678,lisa.smith@example.com,2024-10-16
-ICT niveau 3,mark,van,brown,0623456789,mark.brown@example.com,2024-10-16
-Dev,john,,doe,0612345678,john.doe@example.com,2024-10-16
-ICT niveau 4,alice,,wonder,0623456789,alice.wonder@example.com,2024-10-15
-Dev,susan,de,white,0612345678,susan.white@example.com,2024-10-17
-ICT niveau 3,michael,van,clark,0612345678,michael.clark@example.com,2024-10-15
-Dev,anna,van,lee,0623456789,anna.lee@example.com,2024-10-16
-ICT niveau 3,robert,,johnson,0612345678,robert.johnson@example.com,2024-10-15
-Dev,nancy,de,green,0623456789,nancy.green@example.com,2024-10-17
-ICT niveau 4,kevin,van,black,0612345678,kevin.black@example.com,2024-10-16
-Dev,sophia,,brown,0623456789,sophia.brown@example.com,2024-10-15
-ICT niveau 3,david,van,white,0612345678,david.white@example.com,2024-10-17
-ICT niveau 4,emma,de,blue,0623456789,emma.blue@example.com,2024-10-15
-Dev,lisa,,jones,0612345678,lisa.jones@example.com,2024-10-16
-ICT niveau 3,mark,de,smith,0623456789,mark.smith@example.com,2024-10-17
-Dev,john,van,brown,0612345678,john.brown@example.com,2024-10-16
-ICT niveau 4,alice,van,clark,0623456789,alice.clark@example.com,2024-10-15
-Dev,susan,,white,0612345678,susan.white2@example.com,2024-10-17
-ICT niveau 3,michael,de,lee,0612345678,michael.lee@example.com,2024-10-15
-Dev,anna,,black,0623456789,anna.black@example.com,2024-10-16
-ICT niveau 3,robert,van,johnson,0612345678,robert.johnson2@example.com,2024-10-15
-Dev,nancy,van,green,0623456789,nancy.green2@example.com,2024-10-17
-ICT niveau 4,kevin,,brown,0612345678,kevin.brown@example.com,2024-10-16
-Dev,sophia,van,white,0623456789,sophia.white@example.com,2024-10-15
-ICT niveau 3,david,,black,0612345678,david.black@example.com,2024-10-17
-ICT niveau 4,emma,van,blue,0623456789,emma.blue2@example.com,2024-10-15
-Dev,lisa,de,jones,0612345678,lisa.jones2@example.com,2024-10-16
-ICT niveau 3,mark,,smith,0623456789,mark.smith2@example.com,2024-10-17
-Dev,john,de,brown,0612345678,john.brown2@example.com,2024-10-16
-ICT niveau 4,alice,van,clark,0623456789,alice.clark2@example.com,2024-10-15
-Dev,susan,,white,0612345678,susan.white3@example.com,2024-10-17
-ICT niveau 3,michael,van,lee,0612345678,michael.lee2@example.com,2024-10-15
-Dev,anna,de,black,0623456789,anna.black2@example.com,2024-10-16
-ICT niveau 3,robert,,johnson,0612345678,robert.johnson3@example.com,2024-10-15
-Dev,nancy,van,green,0623456789,nancy.green3@example.com,2024-10-17
-ICT niveau 4,kevin,,brown,0612345678,kevin.brown2@example.com,2024-10-16
-Dev,sophia,,white,0623456789,sophia.white2@example.com,2024-10-15
-ICT niveau 3,david,de,black,0612345678,david.black2@example.com,2024-10-17
-ICT niveau 4,emma,,blue,0623456789,emma.blue3@example.com,2024-10-15
-Dev,lisa,van,jones,0612345678,lisa.jones3@example.com,2024-10-16
-ICT niveau 3,mark,van,smith,0623456789,mark.smith3@example.com,2024-10-17
-Dev,john,de,brown,0612345678,john.brown3@example.com,2024-10-16
-ICT niveau 4,alice,,clark,0623456789,alice.clark3@example.com,2024-10-15
-Dev,susan,van,white,0612345678,susan.white4@example.com,2024-10-17
-ICT niveau 3,michael,,lee,0612345678,michael.lee3@example.com,2024-10-15
-Dev,anna,van,black,0623456789,anna.black3@example.com,2024-10-16
-ICT niveau 3,robert,,johnson,0612345678,robert.johnson4@example.com,2024-10-15
 Dev,nancy,de,green,0623456789,nancy.green4@example.com,2024-10-17
-ICT niveau 4,kevin,van,brown,0612345678,kevin.brown3@example.com,2024-10-16
+Dev,nancy,de,green,0623456789,nancy.green@example.com,2024-10-17
+Dev,anna,,black,0623456789,anna.black@example.com,2024-10-16
+Dev,sophia,van,white,0623456789,sophia.white@example.com,2024-10-15
+Dev,anna,van,lee,0623456789,anna.lee@example.com,2024-10-16
+Dev,susan,van,white,0612345678,susan.white4@example.com,2024-10-17
+Dev,susan,de,white,0612345678,susan.white@example.com,2024-10-17
+Dev,susan,,white,0612345678,susan.white3@example.com,2024-10-17
 Dev,sophia,,white,0623456789,sophia.white3@example.com,2024-10-15
+Dev,sophia,,brown,0623456789,sophia.brown@example.com,2024-10-15
+Dev,nancy,van,green,0623456789,nancy.green2@example.com,2024-10-17
+Dev,sophia,,white,0623456789,sophia.white2@example.com,2024-10-15
+Dev,susan,,white,0612345678,susan.white2@example.com,2024-10-17
+Dev,john,van,brown,0612345678,john.brown@example.com,2024-10-16
+Dev,john,de,brown,0612345678,john.brown2@example.com,2024-10-16
+Dev,lisa,,jones,0612345678,lisa.jones@example.com,2024-10-16
+Dev,anna,van,black,0623456789,anna.black3@example.com,2024-10-16
+Dev,lisa,de,jones,0612345678,lisa.jones2@example.com,2024-10-16
+Dev,nancy,van,green,0623456789,nancy.green3@example.com,2024-10-17
+Dev,anna,de,black,0623456789,anna.black2@example.com,2024-10-16
+Dev,john,,doe,0612345678,john.doe@example.com,2024-10-16
+Dev,lisa,de,smith,0612345678,lisa.smith@example.com,2024-10-16
+ICT niveau 3,michael,van,clark,0612345678,michael.clark@example.com,2024-10-15
+ICT niveau 3,michael,,lee,0612345678,michael.lee3@example.com,2024-10-15
+ICT niveau 3,mark,van,brown,0623456789,mark.brown@example.com,2024-10-16
+ICT niveau 3,emma,van,stone,0623456789,emma.stone@example.com,2024-10-15
+ICT niveau 3,robert,,johnson,0612345678,robert.johnson3@example.com,2024-10-15
+ICT niveau 3,robert,,johnson,0612345678,robert.johnson4@example.com,2024-10-15
+ICT niveau 3,michael,van,lee,0612345678,michael.lee2@example.com,2024-10-15
+ICT niveau 3,robert,,johnson,0612345678,robert.johnson@example.com,2024-10-15
+ICT niveau 3,michael,de,lee,0612345678,michael.lee@example.com,2024-10-15
+ICT niveau 3,david,de,black,0612345678,david.black2@example.com,2024-10-17
+ICT niveau 3,mark,,smith,0623456789,mark.smith2@example.com,2024-10-17
+ICT niveau 3,david,,black,0612345678,david.black@example.com,2024-10-17
 ICT niveau 3,david,van,black,0612345678,david.black3@example.com,2024-10-17
-ICT niveau 4,sam,,kint,0621637282,sam@test.com,2024-10-17
-Dev,samuel,,kint,0631728833,test345@gmail.test,2024-10-16
-ICT niveau 3,daswd,,wegwsgw,0642617367,daucgtgtwdfyuiad@kbdbaj.com,2024-10-17
+ICT niveau 3,mark,de,smith,0623456789,mark.smith@example.com,2024-10-17
+ICT niveau 3,david,van,white,0612345678,david.white@example.com,2024-10-17
+ICT niveau 3,robert,van,johnson,0612345678,robert.johnson2@example.com,2024-10-15
+ICT niveau 3,mark,van,smith,0623456789,mark.smith3@example.com,2024-10-17
+ICT niveau 4,kevin,van,brown,0612345678,kevin.brown3@example.com,2024-10-16
+ICT niveau 4,kevin,,brown,0612345678,kevin.brown@example.com,2024-10-16
+ICT niveau 4,kevin,van,black,0612345678,kevin.black@example.com,2024-10-16
+ICT niveau 4,alice,,wonder,0623456789,alice.wonder@example.com,2024-10-15
+ICT niveau 4,alice,,clark,0623456789,alice.clark3@example.com,2024-10-15
+ICT niveau 4,alice,van,clark,0623456789,alice.clark@example.com,2024-10-15
+ICT niveau 4,kevin,,brown,0612345678,kevin.brown2@example.com,2024-10-16
+ICT niveau 4,alice,van,clark,0623456789,alice.clark2@example.com,2024-10-15
+ICT niveau 4,emma,de,blue,0623456789,emma.blue@example.com,2024-10-15
+ICT niveau 4,emma,,blue,0623456789,emma.blue3@example.com,2024-10-15
+ICT niveau 4,emma,van,blue,0623456789,emma.blue2@example.com,2024-10-15
+ICT niveau 4,jan,de,doe,0612345678,jan.doe@example.com,2024-10-17
+ICT niveau 4,Marten,,Rus,0610101010,martinrages@gmail.com,2024-10-16

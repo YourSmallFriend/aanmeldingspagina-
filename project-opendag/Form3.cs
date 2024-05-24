@@ -18,6 +18,7 @@ namespace admimlogin
             achternaamTXT.Font = standaardTXTsize;
             telefoonnummerTXT.Font = standaardTXTsize;
             mailTXT.Font = standaardTXTsize;
+            tussenvoegselTXT.Font = standaardTXTsize;
 
             // Initialisatie van ErrorProvider
             errorProvider = new ErrorProvider();
@@ -60,7 +61,6 @@ namespace admimlogin
                 errorProvider.SetError(voornaamTXT, "");
             }
 
-            // Validatie van achternaam
             if (!Regex.IsMatch(achternaamTXT.Text, "^[a-zA-Z]+$"))
             {
                 errorProvider.SetError(achternaamTXT, "Voer een geldige achternaam in.");
@@ -71,7 +71,6 @@ namespace admimlogin
                 errorProvider.SetError(achternaamTXT, "");
             }
 
-            // Validatie van telefoonnummer
             if (!Regex.IsMatch(telefoonnummerTXT.Text, "^06[0-9]{8}$"))
             {
                 errorProvider.SetError(telefoonnummerTXT, "Voer een geldig telefoonnummer in dat begint met '06' en daarna nog 8 cijfers heeft.");
@@ -82,7 +81,6 @@ namespace admimlogin
                 errorProvider.SetError(telefoonnummerTXT, "");
             }
 
-            // Validatie van e-mailadres
             if (string.IsNullOrWhiteSpace(mailTXT.Text))
             {
                 errorProvider.SetError(mailTXT, "Voer een e-mailadres in.");

@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
-using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace admimlogin
 {
     public partial class Form2 : Form
     {
+        private string csvFilePath = "aanmeldingformulier.csv";
+
         public Form2()
         {
             InitializeComponent();
-            LoadCSVFile("aanmeldingformulier.csv");
+            LoadCSVFile(csvFilePath);
             DisplayChartFromGrid();
         }
 
@@ -72,61 +73,101 @@ namespace admimlogin
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        public void DisplayChartFromGrid()
-        {
-            chart1.Series.Clear();
-            var seriesDev = new Series("Dev")
+            public void DisplayChartFromGrid()
             {
-                ChartType = SeriesChartType.Column,
-                Color = Color.Red
-            };
-            var seriesICTNiveau3 = new Series("ICT niveau 3")
-            {
-                ChartType = SeriesChartType.Column,
-                Color = Color.Blue
-            };
-            var seriesICTNiveau4 = new Series("ICT niveau 4")
-            {
-                ChartType = SeriesChartType.Column,
-                Color = Color.Green
-            };
-
-            chart1.Series.Add(seriesDev);
-            chart1.Series.Add(seriesICTNiveau3);
-            chart1.Series.Add(seriesICTNiveau4);
-
-            Dictionary<string, Dictionary<string, int>> datumOpleidingCounts = new Dictionary<string, Dictionary<string, int>>();
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (!row.IsNewRow)
+                chart1.Series.Clear();
+                var seriesDev = new Series("Dev")
                 {
-                    string datum = row.Cells["Datum"].Value.ToString();
-                    string opleiding = row.Cells["Opleiding"].Value.ToString();
+                    ChartType = SeriesChartType.Column,
+                    Color = Color.Red
+                };
+                var seriesICTNiveau3 = new Series("ICT niveau 3")
+                {
+                    ChartType = SeriesChartType.Column,
+                    Color = Color.Blue
+                };
+                var seriesICTNiveau4 = new Series("ICT niveau 4")
+                {
+                    ChartType = SeriesChartType.Column,
+                    Color = Color.Green
+                };
 
-                    if (!datumOpleidingCounts.ContainsKey(datum))
+                chart1.Series.Add(seriesDev);
+                chart1.Series.Add(seriesICTNiveau3);
+                chart1.Series.Add(seriesICTNiveau4);
+
+                Dictionary<string, Dictionary<string, int>> datumOpleidingCounts = new Dictionary<string, Dictionary<string, int>>();
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (!row.IsNewRow)
                     {
-                        datumOpleidingCounts[datum] = new Dictionary<string, int>
+                        string datum = row.Cells["Datum"].Value.ToString();
+                        string opleiding = row.Cells["Opleiding"].Value.ToString();
+
+                        if (!datumOpleidingCounts.ContainsKey(datum))
+                        {
+                            datumOpleidingCounts[datum] = new Dictionary<string, int>
                         {
                             { "Dev", 0 },
                             { "ICT niveau 3", 0 },
                             { "ICT niveau 4", 0 }
                         };
-                    }
+                        }
 
-                    if (datumOpleidingCounts[datum].ContainsKey(opleiding))
+                        if (datumOpleidingCounts[datum].ContainsKey(opleiding))
+                        {
+                            datumOpleidingCounts[datum][opleiding]++;
+                        }
+                    }
+                }
+                foreach (var datum in datumOpleidingCounts.Keys)
+                {
+                    var counts = datumOpleidingCounts[datum];
+                    seriesDev.Points.AddXY(datum, counts["Dev"]);
+                    seriesICTNiveau3.Points.AddXY(datum, counts["ICT niveau 3"]);
+                    seriesICTNiveau4.Points.AddXY(datum, counts["ICT niveau 4"]);
+                }
+            }
+        private void UpdateCSVFile(string filename)
+        {
+            try
+            {
+                string filePath = Path.Combine(Application.StartupPath, filename);
+
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                     {
-                        datumOpleidingCounts[datum][opleiding]++;
+                        string line = "";
+                        for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                        {
+                            line += dataGridView1.Rows[i].Cells[j].Value.ToString() + ",";
+                        }
+                        line = line.TrimEnd(',');
+                        writer.WriteLine(line);
                     }
                 }
             }
-            foreach (var datum in datumOpleidingCounts.Keys)
+            catch (Exception ex)
             {
-                var counts = datumOpleidingCounts[datum];
-                seriesDev.Points.AddXY(datum, counts["Dev"]);
-                seriesICTNiveau3.Points.AddXY(datum, counts["ICT niveau 3"]);
-                seriesICTNiveau4.Points.AddXY(datum, counts["ICT niveau 4"]);
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnDeleteRow_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int selectedIndex = dataGridView1.SelectedRows[0].Index;
+                dataGridView1.Rows.RemoveAt(selectedIndex);
+
+                // Update CSV-bestand na het verwijderen van de rij
+                UpdateCSVFile(csvFilePath);
+            }
+            else
+            {
+                MessageBox.Show("Selecteer eerst een rij om te verwijderen.");
             }
         }
     }
